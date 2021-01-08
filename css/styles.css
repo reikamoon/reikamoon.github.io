@@ -125,9 +125,12 @@ p {
   border-width: 2px;
 }
 
-.item3 {
+.skillbox {
   grid-area: main;
-  height: 1200px;
+  background-color: white;
+  position: absolute;
+  top: 200px;
+  left: 600px;
 }
 
 .links {
@@ -202,3 +205,21 @@ p {
   padding: 20px 0;
   font-size: 30px;
 }
+
+* {box-sizing: border-box}
+
+.skillcontainer {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
