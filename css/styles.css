@@ -22,6 +22,29 @@ p {
   font-family: Helvetica;
 }
 
+* {box-sizing: border-box}
+
+/* Icons */
+.fa-grin-alt {
+  color: white;
+}
+.fa-map-marker-alt {
+  color:  #ff6699;
+}
+.fa-briefcase {
+  color:   #39ac73;
+}
+.fa-linkedin {
+  color:   #ff6699;
+}
+.fa-graduation-cap {
+  color: #39ac73;
+}
+.fa-github {
+  color: #39ac73;
+}
+
+
 .marginauto {
   margin: 0 auto;
 }
@@ -57,19 +80,6 @@ p {
   justify-content: center;
 }
 
-.example-box {
-  height: 325px;
-  width: 325px;
-  margin-left: 2.5px;
-  margin-right: 2.5px;
-  margin-top: 2.5px;
-  margin-bottom: 2.5px;
-  display: block;
-  background-color: white;
-  justify-content: center;
-  text-align: center;
-}
-
 .name-box {
   position: absolute;
   left: 398px;
@@ -89,12 +99,22 @@ p {
   text-align: center;
 }
 
-#box {
-  height: 120px;
-  width: 120px;
-  display: block;
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'links main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 5px;
   background-color: pink;
-  margin: auto;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: pink;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 
 .myheader {
@@ -125,13 +145,6 @@ p {
   border-width: 2px;
 }
 
-.skillbox {
-  grid-area: main;
-  background-color: white;
-  position: absolute;
-  top: 200px;
-  left: 600px;
-}
 
 .links {
   height: 400px;
@@ -164,50 +177,6 @@ p {
   font-family: "Maven Pro";
 }
 
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-
-.fa-grin-alt {
-  color: white;
-}
-
-.fa-map-marker-alt {
-  color:  #ff6699;
-}
-
-.fa-briefcase {
-  color:   #39ac73;
-}
-.fa-linkedin {
-  color:   #ff6699;
-}
-.fa-graduation-cap {
-  color: #39ac73;
-}
-.fa-github {
-  color: #39ac73;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'links main main main right right'
-    'menu footer footer footer footer footer';
-  grid-gap: 5px;
-  background-color: pink;
-  padding: 5px;
-}
-
-.grid-container > div {
-  background-color: pink;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-* {box-sizing: border-box}
-
 .skillcontainer {
   width: 100%;
   background-color: #ddd;
@@ -220,6 +189,18 @@ p {
   color: white;
 }
 
+.skillbox {
+  grid-area: main;
+  background-color: pink;
+  position: absolute;
+  top: 200px;
+  left: 600px;
+}
+
 .html {width: 90%; background-color: #4CAF50;}
 .css {width: 80%; background-color: #2196F3;}
 .js {width: 65%; background-color: #f44336;}
+
+
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
