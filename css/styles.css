@@ -29,20 +29,70 @@ p {
   color: white;
 }
 .fa-map-marker-alt {
-  color:  #ff6699;
+  color:  #39ac73;
 }
 .fa-briefcase {
   color:   #39ac73;
 }
 .fa-linkedin {
-  color:   #ff6699;
+  color:   #39ac73;
 }
 .fa-graduation-cap {
-  color: #39ac73;
+  color: #ff6699;
 }
 .fa-github {
+  color: #ff6699;
+}
+.fa-python {
+  color: dodgerblue;
+}
+.fa-js {
+  color: yellow;
+}
+.fa-gem {
+  color: red;
+}
+.fa-at {
+  color: #ff6699;
+}
+.fa-lightbulb {
   color: #39ac73;
 }
+
+/* Languages */
+.python {
+  width: 95%;
+  background-color: #2196F3;
+}
+.js {
+  width: 80%;
+  background-color: yellow;
+}
+.ruby {
+  width: 50%;
+  background-color: red;
+}
+.flask {
+  width: 100%;
+  background-color: slategray;
+}
+.django {
+  width: 97%;
+  background-color:  #00b377;
+}
+.node {
+  width: 80%;
+  background-color: darkgreen;
+}
+.html {
+  width: 99%;
+  background-color: deeppink;
+}
+.css {
+  width: 86%;
+  background-color: deepskyblue;
+}
+
 
 
 .marginauto {
@@ -103,7 +153,7 @@ p {
   height: 1500px;
   width: 1445px;
   margin-top: -9px;
-  margin-left: -10px;
+  margin-left: 1px;
   display: grid;
   grid-template-areas:
    'header header header header header header'
@@ -127,7 +177,7 @@ p {
   background-image: url('/images/sakura.jpg');
   background-size: cover;
   height: 300px;
-
+  align-content: center;
 }
 
 .menu {
@@ -138,7 +188,22 @@ p {
 
 .picture {
   grid-area: menu;
-  background-image: url('/images/avatar.jpg');
+  background-image: url('/images/avatarchibi.png');
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  left: 30px;
+  top: 370px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  overflow: hidden;
+}
+
+.newpicture {
+  grid-area: menu;
+  background-image: url('/images/avatarchibi.png');
   background-size: cover;
   height: 400px;
   width: 400px;
@@ -152,7 +217,7 @@ p {
 
 
 .links {
-  height: 400px;
+  height: 585px;
   width: 400px;
   margin-left: 2.5px;
   margin-right: 2.5px;
@@ -163,11 +228,12 @@ p {
   justify-content: center;
   text-align: center;
   position: absolute;
-  top: 790px;
-  left: 30px;
+  top: 768px;
+  left: 28px;
   border-style: dotted;
   border-color: #39ac73;
   border-width: 4px;
+  overflow: hidden;
 
 }
 
@@ -191,19 +257,57 @@ p {
   text-align: center;
   padding-top: 2px;
   padding-bottom: 2px;
-  color: white;
+  color: black;
   font-family: "Maven Pro";
+}
+
+.statsheader {
+  font-size: 45px;
+  font-family: "Press Start 2P";
+  text-decoration: underline;
+}
+
+.statsheader2 {
+  font-size: 40px;
+  text-decoration: underline;
+  font-family: "Press Start 2P";
+}
+
+
+.flex-container {
+  width: 410px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  background-color: blue;
+  justify-content: center;
+}
+
+.skillbg {
+  background-color: black;
+  grid-area: main;
+  display: block;
+  width: 100%;
+  height: 340px;
 }
 
 .skillbox {
   grid-area: main;
-  background-color: pink;
-  transform: translate(200px, -140px);
+  background-color: black;
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  color: white;
+  background-size: cover;
+  border-style: outset;
+  border-color: ghostwhite;
+  border-width: 2px;
+  transform: translate(220px, -150px);
+  overflow: hidden;
 }
 
-.html {width: 90%; background-color: #4CAF50;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
 
 
 .item4 { grid-area: right; }
