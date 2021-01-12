@@ -108,6 +108,7 @@ p {
 
 .marginautoa {
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .marginautop {
@@ -209,8 +210,8 @@ p {
   height: 400px;
   width: 400px;
   position: absolute;
-  left: 2px;
-  top: 370px;
+  left: 1px;
+  top: 350px;
   border-style: solid;
   border-color: white;
   border-width: 2px;
@@ -237,8 +238,8 @@ p {
   justify-content: center;
   text-align: center;
   position: absolute;
-  top: 768px;
-  left: 2px;
+  top: 748px;
+  left: 0.5px;
   border-style: dotted;
   border-color: #39ac73;
   border-width: 4px;
@@ -407,7 +408,7 @@ p {
 
 .aboutbox {
   grid-area: main;
-  height: 1300px;
+  height: 500px;
   width: 1000px;
   background-color: white;
   font-family: "Maven Pro";
@@ -416,9 +417,25 @@ p {
   background-size: cover;
   border-style: dotted;
   border-color: #39ac73;
-  border-width: 2px;
+  border-width: 4px;
   transform: translate(320px, -170px);
-  overflow: hidden;
+  overflow: scroll;
+}
+
+.aboutboxb {
+  grid-area: main;
+  height: 500px;
+  width: 1000px;
+  background-color: white;
+  font-family: "Maven Pro";
+  font-size: 20px;
+  color: pink;
+  background-size: cover;
+  border-style: dotted;
+  border-color: #39ac73;
+  border-width: 4px;
+  transform: translate(320px, -140px);
+  overflow: scroll;
 }
 
 .aboutheader {
