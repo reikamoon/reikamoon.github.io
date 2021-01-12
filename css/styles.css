@@ -502,26 +502,37 @@ p {
   overflow: scroll;
 }
 
+.StudyBuddyHeader {
+  transform: translate(10px, 0px);
+  font-family: "Architects Daughter";
+  font-size: 30px;
+}
+
 .portfolioboxc {
   grid-area: main;
-  height: 480px;
-  width: 540px;
-  background-color: deepskyblue;
+  height: 380px;
+  width: 480px;
+  background-color: darkslategrey;
   font-family: "Maven Pro";
   font-size: 20px;
-  color: black;
+  color: white;
   background-size: cover;
   border-style: solid;
-  border-color: #39ac73;
+  border-color: darkgoldenrod;
   border-width: 2px;
-  transform: translate(230px, -540px);
-  overflow: hidden;
+  transform: translate(230px, -570px);
+  overflow: scroll;
+}
+
+.dontmixthatheader {
+  font-family: "East Sea Dokdo";
+  font-size: 40px;
 }
 
 .portfolioboxd {
   grid-area: main;
-  height: 480px;
-  width: 540px;
+  height: 380px;
+  width: 480px;
   background-color: darkslategrey;
   font-family: "Maven Pro";
   font-size: 20px;
@@ -530,8 +541,13 @@ p {
   border-style: solid;
   border-color: #39ac73;
   border-width: 2px;
-  transform: translate(740px, -940px);
-  overflow: hidden;
+  transform: translate(750px, -950px);
+  overflow: scroll;
+}
+
+.studybuddynodeheader {
+  font-family: "Architects Daughter";
+  font-size: 30px;
 }
 
 
