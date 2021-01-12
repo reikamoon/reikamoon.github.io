@@ -487,14 +487,13 @@ p {
   grid-area: main;
   height: 380px;
   width: 480px;
-  background-color: white;
-  background-image: url("/images/notebookpaper.jpg");
+  background-color: red;
   background-size: cover;
-  font-family: "Maven Pro";
+  font-family: "Karla";
   font-size: 20px;
   color: black;
   border-style: solid;
-  border-color: dodgerblue;
+  border-color: black;
   border-width: 3px;
   z-index: 1;
   align-content: right;
@@ -533,20 +532,20 @@ p {
   grid-area: main;
   height: 380px;
   width: 480px;
-  background-color: darkslategrey;
+  background-color: #ff6699;
   font-family: "Maven Pro";
   font-size: 20px;
   color: black;
   background-size: cover;
   border-style: solid;
-  border-color: #39ac73;
+  border-color: darkturquoise;
   border-width: 2px;
   transform: translate(750px, -950px);
   overflow: scroll;
 }
 
 .studybuddynodeheader {
-  font-family: "Architects Daughter";
+  font-family: "Oswald";
   font-size: 30px;
 }
 
